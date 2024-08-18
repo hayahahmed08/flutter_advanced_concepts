@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_advanced_concepts/home_screem.dart';
 
 void main() {
-  runApp(const MyApp());
-}
+  runApp(const MyApp());  //app runs from here
 
+}
+//then it comes to this widget where it gets material app
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

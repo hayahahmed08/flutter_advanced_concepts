@@ -13,7 +13,25 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal,
+        title: Center(child: Text("Navigation Drawer", style: TextStyle(color: Colors.white),)),
+      ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center
+        ,crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          //text button has a property onpressed that accept
+        TextButton(
+          onPressed: (){
+
+          },
+          child: Text('Screen 1'),
+        )
+        ],
+      )
+    );
   }
 }
 
