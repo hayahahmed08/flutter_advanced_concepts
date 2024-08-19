@@ -25,8 +25,8 @@ class _ScreenTwoState extends State<ScreenTwo> {
             Center(
               child: TextButton(
                 onPressed: (){
-                  // Navigator.pushNamed(context, HomeScreen.id);
-                  Navigator.pop(context);
+                  Navigator.pushNamed(context, HomeScreen.id);
+                  //Navigator.pop(context);
                 },
                 child: Text('Screen 2'),
               ),
