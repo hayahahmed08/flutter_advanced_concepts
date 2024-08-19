@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_concepts/screen_two.dart';
 //allows to create widgets
 
 
 //creating a widget HomeScreen
 class HomeScreen extends StatefulWidget {
+  static const String id = 'home_screem';
+
   const HomeScreen({super.key});
 
   @override
@@ -22,12 +25,14 @@ class _HomeScreenState extends State<HomeScreen> {
         mainAxisAlignment: MainAxisAlignment.center
         ,crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          //text button has a property onpressed that accept
-        TextButton(
-          onPressed: (){
-
-          },
-          child: Text('Screen 1'),
+          //text button has a property onpressed that accepts
+        Center(
+          child: TextButton(
+            onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> ScreenTwo()));
+            },
+            child: Text('Screen 1'),
+          ),
         )
         ],
       )
