@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_concepts/home_screem.dart';
+import 'package:flutter_advanced_concepts/screen_two.dart';
 
 void main() {
   runApp(const MyApp());  //app runs from here
@@ -16,6 +17,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      // initialRoute: HomeScreen.id,
+      // routes: {
+      //   HomeScreen.id : (context) => HomeScreen()
+      //   ,ScreenTwo.id : (context) => ScreenTwo()
+      // },
       home: HomeScreen(), // Changed semicolon to comma
     );
   }
