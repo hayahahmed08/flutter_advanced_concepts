@@ -21,6 +21,9 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.teal,
         title: Center(child: Text("Navigation Drawer", style: TextStyle(color: Colors.white),)),
       ),
+      drawer: Drawer(
+        child: SafeArea(child: Text('Subscribe me')),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center
         ,crossAxisAlignment: CrossAxisAlignment.center,
